@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ Bot — Demo</title>
+
+  <!-- Pokud chceš vložit widget externě, stačí pak importovat chatbot.js v head (viz níže) -->
+  <script src="/static/chatbot.js" defer></script>
+</head>
+<body>
+  <h1>Demo stránky s FAQ Botem</h1>
+  <p>Tady je klasická stránka — pod ní vložen widget.</p>
+
+  <!-- Místo, kam se widget vloží (můžeš ho mít kamkoliv) -->
+  <div id="faq-bot-root"></div>
+
+  <hr />
+  <h2>Příklad: vložení widgetu do jiné HTML stránky</h2>
+  <pre>
+&lt;head&gt;
+  &lt;script src="https://tvoje-domena.cz/static/chatbot.js" defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+  &lt;div id="faq-bot-root"&gt;&lt;/div&gt;
+&lt;/body&gt;
+  </pre>
+  <p>Pokud #faq-bot-root není přítomen, widget se automaticky ukotví do pravého dolního rohu.</p>
+</body>
+</html>
