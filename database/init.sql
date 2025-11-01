@@ -4,5 +4,5 @@ BEGIN
 END
 GO
 
-USE Hackaton2DB;
+USE Hackaton_2_Database;
 GO
