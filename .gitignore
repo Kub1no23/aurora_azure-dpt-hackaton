@@ -1,0 +1,27 @@
+# Environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Database backups or temporary files
+*.bak
+*.sql~
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Node.js dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/

@@ -4,6 +4,7 @@ import json
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from difflib import get_close_matches
+from dotenv import load_dotenve
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 CORS(app)
@@ -92,3 +93,9 @@ def static_proxy(path):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
+load_dotenv()
+
+class connfig:
+    SQLALCHEMY_DATABASE_URI = f"mssql+pyodbc://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_SERVER')}/{os.getenv('DB_NAME')}?driver=ODBC+Driver+17+for+SQL+Server"
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
