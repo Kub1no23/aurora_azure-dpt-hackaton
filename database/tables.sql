@@ -5,7 +5,8 @@ CREATE TABLE Users (
     passwd_hash NVARCHAR(255) NOT NULL,
     last_login DATETIME,
     language NVARCHAR(50),
-    login_location NVARCHAR(255)
+    login_location NVARCHAR(255),
+    email_verified BIT DEFAULT 0
 );
 GO
 
