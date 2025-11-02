@@ -4,7 +4,8 @@ import json
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from difflib import get_close_matches
-from dotenv import load_dotenve
+from dotenv import load_dotenv
+
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 CORS(app)
