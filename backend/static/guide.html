@@ -1,31 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FAQ Bot — Demo</title>
-
-  <!-- Pokud chceš vložit widget externě, stačí pak importovat chatbot.js v head (viz níže) -->
-  <script src="/static/chatbot.js" defer></script>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+    <title>FAQ Bot - STCčkař</title>
+    <link rel="stylesheet" href="/static/css/chatbot.css">
 </head>
 <body>
-  <h1>Demo stránky s FAQ Botem</h1>
-  <p>Tady je klasická stránka — pod ní vložen widget.</p>
-
-  <!-- Místo, kam se widget vloží (můžeš ho mít kamkoliv) -->
-  <div id="faq-bot-root"></div>
-
-  <hr />
-  <h2>Příklad: vložení widgetu do jiné HTML stránky</h2>
-  <pre>
-&lt;head&gt;
-  &lt;script src="https://tvoje-domena.cz/static/chatbot.js" defer&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  ...
-  &lt;div id="faq-bot-root"&gt;&lt;/div&gt;
-&lt;/body&gt;
-  </pre>
-  <p>Pokud #faq-bot-root není přítomen, widget se automaticky ukotví do pravého dolního rohu.</p>
+    <div id="faq-bot-container">
+        <button id="faq-toggle-btn" aria-label="Otevřít FAQ bota">Potřebuješ poradit?</button>
+        <div id="faq-bot" role="region" aria-label="FAQ bot">
+            <div class="header">FAQ Bot — máš otázku?</div>
+            <div class="messages" id="faq-messages" aria-live="polite"></div>
+            <div class="input">
+                <input id="faq-input" placeholder="Co zmínit v přihlášce?" aria-label="Zadej dotaz" />
+                <button id="faq-send" aria-label="Odeslat">Pošli</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/static/js/main.js"></script>
 </body>
 </html>

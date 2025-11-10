@@ -1,0 +1,34 @@
+#faq-bot-container { position: fixed; right: 18px; bottom: 18px; z-index: 9999; }
+#faq-toggle-btn {
+  background: linear-gradient(90deg, #0655E7, #0078D7);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+#faq-bot {
+  font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
+  width: 360px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  background: #fff;
+  display: none;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+#faq-bot.open { display: flex; }
+#faq-bot .header { background: linear-gradient(90deg,#0655E7, #0078D7); padding: 12px; color: #fff; font-weight: 700; }
+#faq-bot .messages { height: 320px; overflow: auto; padding: 12px; background: #f9f9fb; }
+#faq-bot .input { display: flex; border-top: 1px solid #eee; }
+#faq-bot input { flex: 1; border: 0; padding: 12px; outline: none; font-size: 14px; }
+#faq-bot button { border: 0; padding: 0 14px; background: transparent; color: #fff; font-weight: 700; cursor: pointer; background: linear-gradient(90deg,#0655E7,#0078D7); }
+.msg { margin: 8px 0; padding: 10px 12px; border-radius: 10px; max-width: 86%; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+.msg.user { background: #dfefff; margin-left: auto; }
+.msg.bot { background: #ffffff; margin-right: auto; color: #111; border: 1px solid #eee; }
+.source { font-size: 11px; color: #666; margin-top: 6px; }
