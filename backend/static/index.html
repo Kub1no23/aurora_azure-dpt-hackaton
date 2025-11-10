@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="cs">
- <head>
+<head>
   <style>
-   body {transition: opacity ease-in 0.2s; } 
-body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; }
+    body {transition: opacity ease-in 0.2s;}
+    body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative;}
   </style>
   <meta charset="utf-8"/>
   <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
@@ -16,11 +17,8 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   <meta content="Portál STCčkaře" name="application-name"/>
   <meta content="#0078d7" name="msapplication-TileColor"/>
   <meta content="#ffffff" name="theme-color"/>
-  <title>
-   Portál STCčkaře
-  </title>
-  <script defer="" src="https://localhost:5000/static/chatbot.js">
-  </script>
+  <title>Portál STCčkaře</title>
+  <link rel="stylesheet" href="/static/css/chatbot.css">
   <script>
    const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/router-DYJ3acsb.js","assets/calendar.esm-DFI3CWaA.js","assets/RowLinkWrapper-Bf61kqcv.js","assets/inputtext.esm-Cu3C3mKx.js","assets/BoxItemPair-D49o3Lz2.js","assets/inputtextarea.esm-CqblJOb9.js","assets/router-ATW2nujC.js","assets/zod-fnRTUntk.js","assets/index-DZnzvI_C.js","assets/dialog.esm-DI-jxV2-.js","assets/StatisticsBox-D73OpXmC.js","assets/lodash-xgYNxeUr.js","assets/useCountdown-DIJNTjL3.js","assets/useMutation-tXdZWVb8.js","assets/togglebutton.esm-DrkBMonZ.js","assets/ErrorReponse-BkVJOqX3.js","assets/router-D4NbbYZx.js","assets/router-CAs_0-xE.js","assets/router-yiOwQ71P.js","assets/router-BX6eWGga.js","assets/router-DSn9tGnw.js","assets/pick-CoyNpFLF.js","assets/pick-DREF2vIN.css","assets/router-BXK_iTLh.css","assets/router-CdkBrsaO.js","assets/ApplicationsLanding-DKXhipNk.js"])))=>i.map(i=>d[i]);
 (function(){try{var t=typeof window<"u"?window:typeof global<"u"?global:typeof globalThis<"u"?globalThis:typeof self<"u"?self:{};t.SENTRY_RELEASE={id:"a17d131cdcf4a3595daed0f653bdf86d52197a09"}}catch{}})();try{(function(){var t=typeof window<"u"?window:typeof global<"u"?global:typeof globalThis<"u"?globalThis:typeof self<"u"?self:{},e=new t.Error().stack;e&&(t._sentryDebugIds=t._sentryDebugIds||{},t._sentryDebugIds[e]="c1deefee-412a-42fa-9a4f-bfb8250738c5",t._sentryDebugIdIdentifier="sentry-dbid-c1deefee-412a-42fa-9a4f-bfb8250738c5")})()}catch{}function Y4(t,e){for(var n=0;n<e.length;n++){const i=e[n];if(typeof i!="string"&&!Array.isArray(i)){for(const r in i)if(r!=="default"&&!(r in t)){const o=Object.getOwnPropertyDescriptor(i,r);o&&Object.defineProperty(t,r,o.get?o:{enumerable:!0,get:()=>i[r]})}}}return Object.freeze(Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}))}(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))i(r);new MutationObserver(r=>{for(const o of r)if(o.type==="childList")for(const a of o.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&i(a)}).observe(document,{childList:!0,subtree:!0});function n(r){const o={};return r.integrity&&(o.integrity=r.integrity),r.referrerPolicy&&(o.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?o.credentials="include":r.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function i(r){if(r.ep)return;r.ep=!0;const o=n(r);fetch(r.href,o)}})();const jD="modulepreload",zD=function(t){return"/"+t},QC={},ii=function(e,n,i){let r=Promise.resolve();if(n&&n.length>0){let u=function(f){return Promise.all(f.map(p=>Promise.resolve(p).then(m=>({status:"fulfilled",value:m}),m=>({status:"rejected",reason:m}))))};document.getElementsByTagName("link");const a=document.querySelector("meta[property=csp-nonce]"),l=a?.nonce||a?.getAttribute("nonce");r=u(n.map(f=>{if(f=zD(f),f in QC)return;QC[f]=!0;const p=f.endsWith(".css"),m=p?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${f}"]${m}`))return;const v=document.createElement("link");if(v.rel=p?"stylesheet":jD,p||(v.as="script"),v.crossOrigin="",v.href=f,l&&v.setAttribute("nonce",l),document.head.appendChild(v),p)return new Promise((y,_)=>{v.addEventListener("load",y),v.addEventListener("error",()=>_(new Error(`Unable to preload CSS for ${f}`)))})}))}function o(a){const l=new Event("vite:preloadError",{cancelable:!0});if(l.payload=a,window.dispatchEvent(l),!l.defaultPrevented)throw a}return r.then(a=>{for(const l of a||[])l.status==="rejected"&&o(l.reason);return e().catch(o)})};var _fe=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function Im(t){return t&&t.__esModule&&Object.prototype.hasOwnProperty.call(t,"default")?t.default:t}function Sfe(t){if(Object.prototype.hasOwnProperty.call(t,"__esModule"))return t;var e=t.default;if(typeof e=="function"){var n=function i(){var r=!1;try{r=this instanceof i}catch{}return r?Reflect.construct(e,arguments,this.constructor):e.apply(this,arguments)};n.prototype=e.prototype}else n={};return Object.defineProperty(n,"__esModule",{value:!0}),Object.keys(t).forEach(function(i){var r=Object.getOwnPropertyDescriptor(t,i);Object.defineProperty(n,i,r.get?r:{enumerable:!0,get:function(){return t[i]}})}),n}var vy={exports:{}},du={},yy={exports:{}},lt={};/**
@@ -2060,8 +2058,7 @@ svg.p-icon g,
   </style>
     <script src="http://localhost:5000/static/chatbot.js" defer></script>
  </head>
- <body cz-shortcut-listen="true">
-    <div id="faq-bot-root" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;"></div>
+ <body cz-shortcut-listen="true">    
   <noscript>
    Pro fungování této aplikace je nutné povolit JavaScript.
    <br/>
